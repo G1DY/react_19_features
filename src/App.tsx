@@ -1,10 +1,9 @@
-import { Suspense } from "react";
-import FetchTodo from "./Components/FetchDataReact19/FetchTodo";
+import Theme from "./Components/CardForTheme/Theme";
 const App = () => {
   return (
-    <Suspense fallback={<h1>loading...</h1>}>
-      <FetchTodo />
-    </Suspense>
+    <div className="justify-center w-full flex mt-[10rem]">
+      <Theme />
+    </div>
   );
 };
 export default App;
