@@ -1,10 +1,10 @@
+import { Suspense } from "react";
+import FetchTodo from "./Components/FetchDataReact19/FetchTodo";
 const App = () => {
   return (
-    <div>
-      <p className="text-2xl font-bold text-red-500 underline">
-        Did My Tailwindcss Install
-      </p>
-    </div>
+    <Suspense fallback={<h1>loading...</h1>}>
+      <FetchTodo />
+    </Suspense>
   );
 };
 export default App;
