@@ -5,7 +5,7 @@ const FormButton = () => {
 
   return (
     <div>
-      <button type="submit" disabled={pending}>
+      <button type="submit" disabled={pending} className="border-2">
         {pending ? "Submitting..." : "submit"}
       </button>
     </div>
