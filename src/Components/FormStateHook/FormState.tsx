@@ -4,12 +4,11 @@ const FormState = () => {
   const myAction = async (formData: any) => {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     const newPost = {
-        name: formData.get("name")
-        email: formData.get("email")
-        password: formData.get("password")
-    }
+      name: formData.get("name"),
+      email: formData.get("email"),
+      password: formData.get("password"),
+    };
     console.log(newPost);
-    
   };
   return (
     <form action={myAction}>
@@ -46,7 +45,7 @@ const FormState = () => {
           className="border-2"
         />
       </div>
-      <FormButton/>
+      <FormButton />
     </form>
   );
 };
