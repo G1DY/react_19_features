@@ -1,9 +1,14 @@
 import { useFormStatus } from "react-dom";
 
 const FormButton = () => {
-  const form = useFormStatus();
-  console.log(form);
+  const { pending } = useFormStatus();
 
-  return <div>FormButton</div>;
+  return (
+    <div>
+      <button type="submit" disabled={pending}>
+        {pending ? "Submitting..." : "submit"}
+      </button>
+    </div>
+  );
 };
 export default FormButton;
