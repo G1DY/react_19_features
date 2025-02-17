@@ -1,8 +1,8 @@
-import Theme from "./Components/CardForTheme/Theme";
+import Form from "./Components/FormAction/Form";
 const App = () => {
   return (
     <div className="justify-center w-full flex mt-[10rem]">
-      <Theme />
+      <Form />
     </div>
   );
 };
